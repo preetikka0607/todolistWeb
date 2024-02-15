@@ -1,0 +1,29 @@
+.NavCompAlign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NavComp{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    
+    background-color: rgb(71, 135, 238);
+    color: white;
+    width: 52vw;
+    height: 80px;
+    border-radius:20px 20px 0 0;
+}
+.NavComp h3{
+    margin: 0 0 0 0;
+    font-size: 26px;
+}
+.navimg-wrapper{
+    margin: 0 0 0 20px;
+    width: 80px;
+    height: 80px;
+}
+.navimg-wrapper img{
+    width: 100%;
+    width: 100%;
+}

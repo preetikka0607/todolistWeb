@@ -1,0 +1,81 @@
+.update-popup{
+    width: 600px;
+    height: 350px;
+    z-index: 5;
+    /* position: relative; */
+    background-color: rgb(71, 135, 238);
+    box-shadow:1px 10px 10px 10px rgb(227, 221, 221);
+    border-radius: 10px;
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1); /* You can adjust the scale factor as needed */
+        opacity: 0;
+      }
+  }
+
+.popup-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap:5px;
+    font-size: 30px;
+}
+.popup-header img{
+    width: 50px;
+    height: 50px;
+    animation: rotate infinite 3s linear;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.popup-buttons{
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.popup-buttons button{
+  background-color: white;
+  border: none;
+  padding: 10px;
+  color:  rgb(71, 135, 238);
+  font-weight: 700;
+  border-radius: 10px;
+}
+.popup-fields input{
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+}
+.popup-fields input:focus{
+  color:  rgb(4, 97, 248);;
+}
+  
+.outer-field{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
