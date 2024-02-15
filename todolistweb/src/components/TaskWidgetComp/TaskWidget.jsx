@@ -32,7 +32,7 @@ const TaskWidget = ({id, taskName, taskDesc, progress, tasksArray, setTasksArray
   return (
     <div className='taskWidget-wrapper'>
         <div className='taskdetails'>
-        <p id='taskName-style1'>{taskName}</p>
+        <p id={progress==="Completed"?'strikeoff':'taskName-style1'}>{taskName}</p>
         <p id='taskDesc-style1'>{taskDesc}</p>
         
         </div>
