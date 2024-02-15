@@ -1,5 +1,6 @@
 import './PopUpComp.css';
 import axios from 'axios';
+import addtask2 from '../../assets/addtask2.png';
 
 
 const PopUpComp = ({tasksArray, setTasksArray, setPopupClicked}) => {
@@ -34,12 +35,12 @@ const cancelPopUP = () => {
     <div className='newTask-container'>
         <div className='newTask-header'>
           <>New Task</>
-          <img src='' alt='newTask'/>
+          <img src={addtask2} alt='newTaskicon'/>
         </div>
         <div className='fields-wrapper'>
         <div className='newTask-fields'>
         <label>Task Name :</label><br></br>
-        <input type='text' id='newtaskName'/><br></br>
+        <input type='text' id='newtaskName'/><br></br><br></br>
         <label>Note : </label><br></br>
         <input type='text' id='newtaskDesc'/><br></br>
         </div>
