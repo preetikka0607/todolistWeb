@@ -3,7 +3,7 @@ import axios from 'axios';
 import updateIcon from '../../assets/updateIcon.png';
 import { useState } from 'react';
 
-const UpdateComp = ({setisupdate, id, setTasksArray, taskName, taskDesc, progress}) => {
+const UpdateComp = ({setisupdate, id, setTasksArray, taskName, taskDesc, progress, setOutputArray}) => {
 
   var prog = "In-progress";
   const setValue = taskName;
@@ -38,6 +38,7 @@ const UpdateComp = ({setisupdate, id, setTasksArray, taskName, taskDesc, progres
       await axios.get('https://65c79665e7c384aada6eb45b.mockapi.io/task').then((response)=>{
           console.log(response.data);
           setTasksArray(response.data);
+          setOutputArray(response.data);
       })
   }catch{
       console.log("Error in getting data");

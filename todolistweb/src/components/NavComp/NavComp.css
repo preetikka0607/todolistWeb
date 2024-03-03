@@ -7,7 +7,7 @@
     margin-top: 50px;
     display: flex;
     align-items: center;
-    
+    justify-content: space-between;
     background-color: rgb(71, 135, 238);
     color: white;
     width: 52vw;
@@ -27,3 +27,51 @@
     width: 100%;
     width: 100%;
 }
+.logoandtext-wrapper{
+    display: flex;
+    align-items: center;
+}
+.filterandsearch{
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+.filterandsearch input{
+    width: 200px;
+    height: 25px;
+    border-radius: 20px;
+    padding: 5px;
+    border-style: none;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.filterandsearch input:focus{
+    border-color: rgb(71, 135, 238);
+    color:  rgb(71, 135, 238);
+    outline: none;
+    /* text-align: center; */
+}
+.Searchboxlogo-wrapper{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 3px;
+    border-radius: 20px;
+    padding-right: 11px;
+}
+.filterandsearch select{
+    border-radius: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.filterandsearch select option{
+    padding-left: 10px;
+    border-radius: 10px;
+    padding-right: 10px;
+    
+}
+/* .filterandsearch select option:first-child{
+    color: green;
+    
+} */

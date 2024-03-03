@@ -3,7 +3,7 @@ import axios from 'axios';
 import addtask2 from '../../assets/addtask2.png';
 
 
-const PopUpComp = ({tasksArray, setTasksArray, setPopupClicked}) => {
+const PopUpComp = ({tasksArray, setTasksArray, setPopupClicked, setOutputArray}) => {
   
 
   async function addTask(){
@@ -19,6 +19,7 @@ const PopUpComp = ({tasksArray, setTasksArray, setPopupClicked}) => {
     try {
       const response = await axios.post('https://65c79665e7c384aada6eb45b.mockapi.io/task', data);
       setTasksArray([...tasksArray,response.data]);
+      setOutputArray([...tasksArray,response.data]);
       console.log(response.data);
       // Handle the response or update the state as needed
     } catch (error) {
